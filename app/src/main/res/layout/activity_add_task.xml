@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.gupta.recyclerlist.AddTask">
+
+    <include
+        android:id="@+id/add_task_toolbar"
+        layout="@layout/tool_bar"
+        />
+
+    <EditText
+        android:id="@+id/title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:ems="10"
+        android:hint="@string/enter_title"
+        android:background="@layout/rounded_border_edittext"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        >
+
+        <requestFocus />
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/detail_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title_textview"
+        android:ems="10"
+        android:hint="@string/enter_detail"
+        android:background="@layout/rounded_border_edittext"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        >
+    </EditText>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/detail_textview"
+        android:layout_height="wrap_content"
+        android:text="@string/save_button"
+        android:backgroundTint="@color/button_background"
+        android:clickable="true"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>
